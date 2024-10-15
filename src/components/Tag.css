@@ -1,0 +1,36 @@
+.tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ffe6e6;  /* Light pink */
+    border: 1px solid #ff9999;  /* Soft red */
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ff4d4d;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tag:nth-child(2n) {
+    background-color: #e6f7ff;  /* Light blue */
+    border-color: #80d4ff;
+    color: #3399ff;
+}
+
+.tag:nth-child(3n) {
+    background-color: #e6ffe6;  /* Light green */
+    border-color: #80ff80;
+    color: #33cc33;
+}
+
+.tag:hover {
+    background-color: #ffe0b3;  /* Light orange on hover */
+    color: #ff9933;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tag:active {
+    background-color: #ffd480;
+    border-color: #ff9933;
+    color: #cc7a00;
+}

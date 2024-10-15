@@ -1,0 +1,60 @@
+.task_card {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #b325ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #ffe7f5, #e4f7ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.task_card:hover {
+    transform: scale(1.02);
+}
+
+.task_text {
+    font-size: 19px;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ff0000;
+    padding-top: 10px;
+}
+
+.task_delete {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1deff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task_delete:hover {
+    background-color: #f35c98;
+    transform: rotate(10deg) scale(1.1);
+}
+
+.delete_icon {
+    width: 22px;
+    opacity: 50%;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.task_delete:hover .delete_icon {
+    opacity: 80%;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}
